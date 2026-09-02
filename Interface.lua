@@ -25,7 +25,7 @@ function Interface:__MakeBase(Config)
 	}, {
 		Creator:New("CanvasGroup", {
 			AnchorPoint      = Vector2.new(0.5, 0.5),
-			BackgroundColor3 = Color3.fromRGB(16, 16, 16),
+			BackgroundColor3 = Color3.fromRGB(12,12,12),
 			Position         = UDim2.new(0.5, 0, 0.5, 0),
 			Size             = UDim2.new(1,0,1,0),
 			Name = "Main"
