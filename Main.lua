@@ -55,15 +55,7 @@ function CLI:Init(BuildConfig: Types.BuildConfig)
 		end
 	end)
 
-	return CLI  --[[so that you can do this:
-		local CLI = require("..."):Init()
-
-		instead of this:
-
-		local CLI = require("...")
-		CLI:Init()
-		-- still possible tho
-	]]--
+	return CLI
 end
 
 function CLI:MakeCommand(name: string | {string}, config: Types.CommandConfig)
