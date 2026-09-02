@@ -1,4 +1,4 @@
-export type ArgumentType = "string" | "integer" | "boolean" | "player" | "any"
+export type ArgumentType = "string" | "integer" | "boolean" | "player" | "any" | "flag"
 
 export type ArgumentConfig = {
 	Name: string,
@@ -11,7 +11,8 @@ export type ArgumentConfig = {
 export type CommandConfig = {
 	Description: string,
 	Arguments: { [string]: ArgumentConfig }?,
-	Function: (Args: { [string]: any }) -> ()
+	Function: (Args: { [string]: any }) -> (),
+	Aliases: { string }?,
 }
 
 export type BuildConfig = {
