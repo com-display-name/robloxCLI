@@ -3,7 +3,7 @@ local Creator = {
 	cloneref = cloneref or function(...) return ... end,
 	Tooltip = nil
 }
-local TweenService = game:GetService("TweenService")
+local TweenService = Creator.cloneref(game:GetService("TweenService"))
 
 local UserInputService = Creator.cloneref(game:GetService("UserInputService"))
 
